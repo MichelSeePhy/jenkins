@@ -6,5 +6,7 @@ pipeline {
             steps {
                 echo 'No docker'
             }
+        }
+    }
   
 }
