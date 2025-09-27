@@ -20,6 +20,14 @@ pipeline {
                 '''
             }
         }
+        stage('Test') {
+            steps {
+                sh '''
+                test -f buidl/index.html
+                npm test
+                '''
+            }
+        }
     }
   
 }
